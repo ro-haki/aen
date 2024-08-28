@@ -1,8 +1,14 @@
-anonymous_ftp_flag:                         HTB{0eb0ab788df18c3115ac43b1c06ae6c4}
-gitlab_public_project:                      HTB{32596e8376077c3ef8d5cf52f15279ba}
-dev.inlanefreight.local/flag.txt:           HTB{57c7f6d939eeda90aa1488b15617b9fa}
-/flag.txt on linux, via XXE:                HTB{dbca4dc5d99cdb3311404ea74921553c}
-axfr inlanefreight.local                    HTB{DNs_ZOn3_Tr@nsf3r}
-dump flag user status.inlanefreight.local   1fbea4df249ac4f4881a5da387eb297cf 
-IDOR in careers /profile?id=4               HTB{8f40ecf17f681612246fa5728c159e46}
-Blind XSS support from ticket form          HTB{1nS3cuR3_c00k135}
+anonymous_ftp_flag:                             HTB{0eb0ab788df18c3115ac43b1c06ae6c4}
+gitlab_public_project:                          HTB{32596e8376077c3ef8d5cf52f15279ba}
+dev.inlanefreight.local/flag.txt:               HTB{57c7f6d939eeda90aa1488b15617b9fa}
+/flag.txt via XXE:                              HTB{dbca4dc5d99cdb3311404ea74921553c}
+axfr inlanefreight.local                        HTB{DNs_ZOn3_Tr@nsf3r}
+dump flag user status.inlanefreight.local       1fbea4df249ac4f4881a5da387eb297cf 
+IDOR in careers /profile?id=4                   HTB{8f40ecf17f681612246fa5728c159e46}
+Blind XSS support from ticket form              HTB{1nS3cuR3_c00k135}
+/flag.txt vis PDF XSS                           HTB{49f0bad299687c62334182178bfd75d8}
+00112233_flag.txt via rev_shell for monitoring  HTB{bdd8a93aff53fd63a0a14de4eba4cbc1}
+flag.txt in /home/srvadm on dmz01               b447c27a00e3a348881b0030177000cd
+flag.txt on dmz01 in /srv/ftp                   HTB{0eb0ab788df18c3115ac43b1c06ae6c4}
+container wordpress /var/www/html/flag.txt      HTB{e7134abea7438e937b87608eab0d979c}
+  
