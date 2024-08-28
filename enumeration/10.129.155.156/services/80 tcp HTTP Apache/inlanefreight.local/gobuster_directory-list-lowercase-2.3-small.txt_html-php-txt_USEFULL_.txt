@@ -1,0 +1,14 @@
+Found: /.html               [33m (Status: 403)[0m [Size: 284]
+Found: /.php                [33m (Status: 403)[0m [Size: 284]
+Found: /images              [36m (Status: 301)[0m [Size: 327][34m [--> http://inlanefreight.local/images/][0m
+Found: /index.html          [32m (Status: 200)[0m [Size: 15157]
+Found: /contact.html        [32m (Status: 200)[0m [Size: 8197]
+Found: /about.html          [32m (Status: 200)[0m [Size: 15312]
+Found: /services.html       [32m (Status: 200)[0m [Size: 10955]
+Found: /gallery.html        [32m (Status: 200)[0m [Size: 9274]
+Found: /css                 [36m (Status: 301)[0m [Size: 324][34m [--> http://inlanefreight.local/css/][0m
+Found: /error.html          [32m (Status: 200)[0m [Size: 6724]
+Found: /fonts               [36m (Status: 301)[0m [Size: 326][34m [--> http://inlanefreight.local/fonts/][0m
+Found: /monitoring          [36m (Status: 301)[0m [Size: 331][34m [--> http://inlanefreight.local/monitoring/][0m
+Found: /.html               [33m (Status: 403)[0m [Size: 284]
+Found: /.php                [33m (Status: 403)[0m [Size: 284]

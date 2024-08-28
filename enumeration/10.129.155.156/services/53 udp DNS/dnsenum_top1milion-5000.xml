@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<magictree class="MtBranchObject">
+    <testdata class="MtBranchObject">
+        <host>127.0.0.1<hostname>inlanefreight.local</hostname></host>
+        <fqdn>inlanefreight.local.</fqdn>
+        <host>127.0.0.1<hostname>inlanefreight.local</hostname></host>
+        <fqdn>inlanefreight.local.</fqdn>
+        <host>127.0.0.1<hostname>blog.inlanefreight.local</hostname></host>
+        <fqdn>blog.inlanefreight.local.</fqdn>
+        <host>127.0.0.1<hostname>dev.inlanefreight.local</hostname></host>
+        <fqdn>dev.inlanefreight.local.</fqdn>
+        <host>127.0.0.1<hostname>vpn.inlanefreight.local</hostname></host>
+        <fqdn>vpn.inlanefreight.local.</fqdn>
+        <host>127.0.0.1<hostname>support.inlanefreight.local</hostname></host>
+        <fqdn>support.inlanefreight.local.</fqdn>
+        <host>127.0.0.1<hostname>status.inlanefreight.local</hostname></host>
+        <fqdn>status.inlanefreight.local.</fqdn>
+        <host>127.0.0.1<hostname>careers.inlanefreight.local</hostname></host>
+        <fqdn>careers.inlanefreight.local.</fqdn>
+        <host>127.0.0.1<hostname>tracking.inlanefreight.local</hostname></host>
+        <fqdn>tracking.inlanefreight.local.</fqdn>
+        <host>127.0.0.1<hostname>ir.inlanefreight.local</hostname></host>
+        <fqdn>ir.inlanefreight.local.</fqdn>
+        <host>127.0.0.1<hostname>gitlab.inlanefreight.local</hostname></host>
+        <fqdn>gitlab.inlanefreight.local.</fqdn>
+    </testdata>
+</magictree>

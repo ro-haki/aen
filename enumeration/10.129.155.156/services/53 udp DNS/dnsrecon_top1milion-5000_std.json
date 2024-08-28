@@ -1,0 +1,21 @@
+[
+    {
+        "arguments": "/usr/bin/dnsrecon -d inlanefreight.local -n 10.129.229.147 -D /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt -j enumeration/10.129.155.156/services/53 udp DNS/dnsrecon_top1milion-5000_std.json -t std",
+        "date": "2024-08-15 14:44:28.856258",
+        "type": "ScanInfo"
+    },
+    {
+        "Version": "",
+        "address": "127.0.0.1",
+        "domain": "inlanefreight.local",
+        "recursive": "False",
+        "target": "inlanefreight.local",
+        "type": "NS"
+    },
+    {
+        "address": "127.0.0.1",
+        "domain": "inlanefreight.local",
+        "name": "inlanefreight.local",
+        "type": "A"
+    }
+]

@@ -1,0 +1,5 @@
+-  `/opt/dural.sh` , `/tmp/drupal-config.sh`  and  `@reboot /bin/bash /opt/drupal.sh in /etc/crontab`  inside  `/etc/crontab`
+	- potentially  I  can use  it  somehow
+- I can write into  PATH
+- in ssh config `PasswordAuthentication yes`
+- `logrotate` has version 3.14.0 

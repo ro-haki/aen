@@ -1,0 +1,2 @@
+- anonymous log in enabled
+- upload for anonymous disabled

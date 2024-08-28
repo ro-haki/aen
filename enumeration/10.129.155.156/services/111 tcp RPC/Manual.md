@@ -1,0 +1,1 @@
+- via rpcclient anonymous, guest requests  return `NT_STATUS_CONNECTION_REFUSED`

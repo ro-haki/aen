@@ -1,0 +1,164 @@
+auth_mechanisms = plain
+!include auth-system.conf.ext
+service director {
+  unix_listener login/director {
+  }
+  fifo_listener login/proxy-notify {
+  }
+  unix_listener director-userdb {
+  }
+  inet_listener {
+  }
+}
+service imap-login {
+}
+service pop3-login {
+}
+service submission-login {
+}
+protocol lmtp {
+}
+plugin {
+}
+ 
+mail_location = mbox:~/mail:INBOX=/var/mail/%u
+namespace inbox {
+  inbox = yes
+}
+mail_privileged_group = mail
+protocol !indexer-worker {
+}
+service imap-login {
+  inet_listener imap {
+  }
+  inet_listener imaps {
+  }
+}
+service pop3-login {
+  inet_listener pop3 {
+  }
+  inet_listener pop3s {
+  }
+}
+service submission-login {
+  inet_listener submission {
+  }
+}
+service lmtp {
+  unix_listener lmtp {
+  }
+}
+service imap {
+}
+service pop3 {
+}
+service submission {
+}
+service auth {
+  unix_listener auth-userdb {
+  }
+}
+service auth-worker {
+}
+service dict {
+  unix_listener dict {
+  }
+}
+ssl = yes
+ssl_cert = </etc/dovecot/private/dovecot.pem
+ssl_key = </etc/dovecot/private/dovecot.key
+ssl_client_ca_dir = /etc/ssl/certs
+ssl_dh = </usr/share/dovecot/dh.pem
+protocol lda {
+}
+namespace inbox {
+  mailbox Drafts {
+    special_use = \Drafts
+  }
+  mailbox Junk {
+    special_use = \Junk
+  }
+  mailbox Trash {
+    special_use = \Trash
+  }
+  mailbox Sent {
+    special_use = \Sent
+  }
+  mailbox "Sent Messages" {
+    special_use = \Sent
+  }
+}
+protocol imap {
+}
+protocol pop3 {
+}
+plugin {
+}
+plugin {
+}
+plugin {
+}
+plugin {
+}
+plugin {
+}
+plugin {
+}
+plugin {
+}
+passdb {
+  driver = checkpassword
+  args = /usr/bin/checkpassword
+}
+userdb {
+  driver = prefetch
+}
+passdb {
+  driver = passwd-file
+  deny = yes
+  args = /etc/dovecot/deny-users
+}
+passdb {
+  driver = dict
+  args = /etc/dovecot/dovecot-dict-auth.conf.ext
+}
+userdb {
+  driver = dict
+  args = /etc/dovecot/dovecot-dict-auth.conf.ext
+}
+passdb {
+  driver = passwd-file
+  master = yes
+  args = /etc/dovecot/master-users
+  pass = yes
+}
+passdb {
+  driver = passwd-file
+  args = scheme=CRYPT username_format=%u /etc/dovecot/users
+}
+userdb {
+  driver = passwd-file
+  args = username_format=%u /etc/dovecot/users
+}
+passdb {
+  driver = sql
+  args = /etc/dovecot/dovecot-sql.conf.ext
+}
+userdb {
+  driver = sql
+  args = /etc/dovecot/dovecot-sql.conf.ext
+}
+passdb {
+  driver = pam
+}
+userdb {
+  driver = passwd
+}
+passdb {
+  driver = vpopmail
+  args =
+}
+userdb {
+  driver = vpopmail
+  args = quota_template=quota_rule=*:backend=%q
+}

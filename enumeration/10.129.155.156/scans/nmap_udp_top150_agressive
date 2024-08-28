@@ -1,0 +1,40 @@
+# Nmap 7.94SVN scan initiated Wed Aug 14 16:39:45 2024 as: nmap -sU -A -p53,68,111 -o scans/10.129.155.156/nmap_udp_top150_agressive 10.129.155.156
+Nmap scan report for inlanefreight.local (10.129.155.156)
+Host is up (0.15s latency).
+
+PORT    STATE         SERVICE VERSION
+53/udp  open          domain  (unknown banner: 1337_HTB_DNS)
+| fingerprint-strings: 
+|   DNSVersionBindReq: 
+|     version
+|     bind
+|     1337_HTB_DNS
+|   NBTStat: 
+|_    CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+| dns-nsid: 
+|_  bind.version: 1337_HTB_DNS
+68/udp  open|filtered dhcpc
+111/udp open          rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-UDP:V=7.94SVN%I=7%D=8/14%Time=66BD1620%P=x86_64-pc-linux-gnu%r(D
+SF:NSVersionBindReq,37,"\0\x06\x85\0\0\x01\0\x01\0\0\0\0\x07version\x04bin
+SF:d\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03\0\0\0\0\0\r\x0c1337_HTB_DNS")%r(DNS
+SF:StatusRequest,C,"\0\0\x90\x04\0\0\0\0\0\0\0\0")%r(NBTStat,32,"\x80\xf0\
+SF:x80\x15\0\x01\0\0\0\0\0\0\x20CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x0
+SF:1");
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+1   40.70 ms 10.10.14.1
+2   40.81 ms inlanefreight.local (10.129.155.156)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 14 16:41:53 2024 -- 1 IP address (1 host up) scanned in 128.11 seconds

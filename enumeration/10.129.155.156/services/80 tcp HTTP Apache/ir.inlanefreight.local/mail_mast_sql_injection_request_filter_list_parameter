@@ -1,0 +1,11 @@
+GET /wp-admin/admin.php?page=masta-lists&action=view_list&filter_list=0 HTTP/1.1
+Host: ir.inlanefreight.local
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.122 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: wordpress_8b892b78a9fa44a793af3f8fdfcba866=ilfreightwp%7C1724790654%7CiBwLQJTFHW0gpuyEAhQwW2llAEAZ21Nw2eb3pxrWi0C%7C7a079cf1b9374921b4bddab3d1c2ec062afaa9c2346414591c7776f96ced8290; comment_author_email_8b892b78a9fa44a793af3f8fdfcba866=test%40gmail.com; comment_author_8b892b78a9fa44a793af3f8fdfcba866=test; comment_author_url_8b892b78a9fa44a793af3f8fdfcba866=http%3A%2F%2Ftest; wordpress_test_cookie=WP%20Cookie%20check; wordpress_logged_in_8b892b78a9fa44a793af3f8fdfcba866=ilfreightwp%7C1724790654%7CiBwLQJTFHW0gpuyEAhQwW2llAEAZ21Nw2eb3pxrWi0C%7C43352f9b38a7b773d701a36f5e3a2120fa78d76baf0fdf51c3e3475e95b81e44; wp_lang=en_US; PHPSESSID=098bf834f6c3aaa819160e60c8200456; wp-settings-time-1=1724619424
+Connection: close
+
