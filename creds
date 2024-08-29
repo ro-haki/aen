@@ -1,3 +1,4 @@
+passwods:
 admin:admin                                 -> shopdev2
 Admin:4528342e54d6f8f8cf15bf6e3c31bf1f6     -> status (sql injection dump)
 admin:12qwaszx                              -> monitoring.inlanefreight.local
@@ -7,3 +8,7 @@ tom:Sup3RS3cuR3P@sSW0rD                     -> from wordress-config.sh which is 
 james:Sup3RS3cuR3P@sSW0rD                   -> from wordress-config.sh which is on container works only for wordpress
 john:Sup3RS3cuR3P@sSW0rD                    -> from wordress-config.sh which is on container works only for wordpress
 WORDPRESS_DB_PASSWORD:Sup3RS3cuR3@123       -> from wordpress container in env
+
+
+hashes:
+admin:$S$EC2Uz..YfIRasblAPLUodfqopenW1mJfjCssyG0shSqfkC/gwq1F   -> drupalo DB in users_field_data
