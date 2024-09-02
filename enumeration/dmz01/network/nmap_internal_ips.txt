@@ -1,0 +1,135 @@
+# Nmap 7.94SVN scan initiated Mon Sep  2 06:41:55 2024 as: nmap -iL htb/aen/enumeration/post_exploit/dmz01/network/internal_IPs -Pn -o htb/aen/enumeration/post_exploit/dmz01/network/nmap_internal_ips.txt
+Nmap scan report for 172.18.0.2
+Host is up (0.12s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT      STATE    SERVICE
+80/tcp    open     http
+50800/tcp filtered unknown
+
+Nmap scan report for 172.18.0.5
+Host is up (0.12s latency).
+Not shown: 988 closed tcp ports (reset)
+PORT      STATE    SERVICE
+70/tcp    filtered gopher
+80/tcp    open     http
+146/tcp   filtered iso-tp0
+1026/tcp  filtered LSA-or-nterm
+1096/tcp  filtered cnrprotocol
+3003/tcp  filtered cgms
+3324/tcp  filtered active-net
+12265/tcp filtered unknown
+15660/tcp filtered bex-xr
+50000/tcp filtered ibm-db2
+50800/tcp filtered unknown
+51493/tcp filtered unknown
+
+Nmap scan report for 172.18.0.3
+Host is up (0.12s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+80/tcp   open     http
+1026/tcp filtered LSA-or-nterm
+
+Nmap scan report for 172.18.0.9
+Host is up (0.12s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE
+8086/tcp open  d-s-n
+
+Nmap scan report for 172.18.0.4
+Host is up (0.12s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE    SERVICE
+1096/tcp filtered cnrprotocol
+3306/tcp open     mysql
+
+Nmap scan report for 172.18.0.7
+Host is up (0.12s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 172.18.0.8
+Host is up (0.12s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 172.18.0.6
+Host is up (0.12s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT      STATE    SERVICE
+88/tcp    filtered kerberos-sec
+1066/tcp  filtered fpo-fns
+1093/tcp  filtered proofd
+3003/tcp  filtered cgms
+3306/tcp  open     mysql
+33354/tcp filtered unknown
+
+Nmap scan report for 172.18.0.10
+Host is up (0.12s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 172.18.0.11
+Host is up (0.12s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 172.18.0.12
+Host is up (0.12s latency).
+Not shown: 999 closed tcp ports (reset)1
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 172.17.0.2
+Host is up (0.12s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 172.16.8.3
+Host is up (0.12s latency).
+Not shown: 986 closed tcp ports (reset)
+PORT     STATE    SERVICE
+53/tcp   open     domain
+88/tcp   open     kerberos-sec
+135/tcp  open     msrpc
+139/tcp  open     netbios-ssn
+389/tcp  open     ldap
+445/tcp  open     microsoft-ds
+464/tcp  open     kpasswd5
+593/tcp  open     http-rpc-epmap
+636/tcp  open     ldapssl
+714/tcp  filtered iris-xpcs
+3268/tcp open     globalcatLDAP
+3269/tcp open     globalcatLDAPssl
+4224/tcp filtered xtell
+5431/tcp filtered park-agent
+
+Nmap scan report for 172.16.8.20
+Host is up (0.13s latency).
+Not shown: 993 closed tcp ports (reset)
+PORT     STATE SERVICE
+80/tcp   open  http
+111/tcp  open  rpcbind
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2049/tcp open  nfs
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.8.50
+Host is up (0.12s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+8080/tcp open  http-proxy
+
+# Nmap done at Mon Sep  2 06:43:11 2024 -- 15 IP addresses (15 hosts up) scanned in 76.56 seconds

@@ -245,3 +245,11 @@ lab_adm          pts/0    10.129.202.106   Tue May 31 11:31:49 +0000 2022
 srvadm           pts/3    10.10.15.185     Wed Aug 28 18:53:42 +0000 2024
 webdev           pts/0    10.129.202.106   Wed Jun  1 07:12:53 +0000 2022
 ```
+-  `php.ini` configuration
+```
+allow_url_fopen = On
+allow_url_include = Off                                                          
+odbc.allow_persistent = On                                                       
+mysqli.allow_persistent = On
+pgsql.allow_persistent = On
+```

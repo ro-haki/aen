@@ -1,0 +1,471 @@
+# Nmap 7.94SVN scan initiated Mon Sep  2 06:46:16 2024 as: nmap -iL htb/aen/enumeration/post_exploit/dmz01/network/internal_IPs -A -Pn -o htb/aen/enumeration/post_exploit/dmz01/network/nmap_internal_ips_aggressive.txt
+Nmap scan report for 172.18.0.2
+Host is up (0.099s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-title: Tools Shop
+|_Requested resource was login.php
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Aggressive OS guesses: IBM z/OS 2.1 (86%), Dell PowerConnect 3324 switch (85%), Radware LinkProof load balancer (85%), IBM OS/2 Warp 2.0 (85%), IBM z/OS 1.11 (85%), Dell PowerConnect 3348 switch (85%), IBM z/OS 1.10 (85%), IBM z/OS 1.12 (85%), Scientific Atlanta WebSTAR EPC2203 cable modem (85%), IBM OS/390 V2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   98.87 ms 172.18.0.2
+
+Nmap scan report for 172.18.0.5
+Host is up (0.12s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-title: ILF Status
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Device type: load balancer|general purpose
+Running (JUST GUESSING): Radware APsolute OS 10.X (85%), IBM OS/2 4.X (85%), IBM z/OS 1.10.X (85%), IBM OS/390 V2 (85%)
+OS CPE: cpe:/o:radware:apsolute_os:10 cpe:/o:ibm:os2:4 cpe:/o:ibm:zos:1.10 cpe:/o:ibm:os_390:v2
+Aggressive OS guesses: Radware LinkProof load balancer (85%), IBM OS/2 Warp 2.0 (85%), IBM z/OS 1.10 (85%), IBM OS/390 V2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE
+HOP RTT       ADDRESS
+1   121.77 ms 172.18.0.5
+
+Nmap scan report for 172.18.0.3
+Host is up (0.11s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 a1:41:77:9f:4d:21:97:e6:53:01:56:f3:78:2e:b1:6e (RSA)
+|   256 9c:08:54:a7:dc:2b:9b:a5:0d:41:b0:a1:94:e8:75:6f (ECDSA)
+|_  256 41:44:46:2f:b4:b3:9c:79:32:12:3f:dc:d3:51:43:34 (ED25519)
+80/tcp open  http    nginx
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-title: Sign in \xC2\xB7 GitLab
+|_Requested resource was http://172.18.0.3/users/sign_in
+| http-robots.txt: 56 disallowed entries (15 shown)
+| / /autocomplete/users /autocomplete/projects /search 
+| /admin /profile /dashboard /users /help /s/ /-/profile /-/ide/ 
+|_/-/experiment /*/new /*/edit
+Device type: broadband router|switch|phone|general purpose
+Running (JUST GUESSING): Scientific Atlanta embedded (86%), Dell embedded (85%), Sony Ericsson embedded (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.X|8.X (85%), Siemens embedded (85%)
+OS CPE: cpe:/h:scientificatlanta:webstar_epc2203 cpe:/h:dell:powerconnect_3348 cpe:/h:sonyericsson:j20 cpe:/h:sonyericsson:j20i cpe:/o:ibm:os_390:v2 cpe:/o:hp:openvms:7 cpe:/o:hp:openvms:8 cpe:/h:siemens:c2-010-i
+Aggressive OS guesses: Scientific Atlanta WebSTAR EPC2203 cable modem (86%), Dell PowerConnect 3348 switch (85%), Sony Ericsson Hazel (J10, J20) or Elm mobile phone (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.3 - 8.3 (85%), Siemens C2-010-I ADSL modem (85%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT       ADDRESS
+1   110.38 ms 172.18.0.3
+
+Nmap scan report for 172.18.0.9
+Host is up (0.11s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+8086/tcp open  d-s-n?
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Server: Werkzeug/2.1.2 Python/3.8.13
+|     Date: Mon, 02 Sep 2024 10:47:47 GMT
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 51806
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="utf-8">
+|     <title>Inlanefreight Careers</title>
+|     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+|     <meta content="" name="keywords">
+|     <meta content="" name="description">
+|     <!-- Favicon -->
+|     <link href="static/img/favicon.ico" rel="icon">
+|     <!-- Google Web Fonts 
+|     <link rel="preconnect" href="https://fonts.googleapis.com">
+|     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+|     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">-->
+|     <!-- Icon Font Stylesheet -->
+|     <link href="static/css/all.min.css" rel="
+|   HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Server: Werkzeug/2.1.2 Python/3.8.13
+|     Date: Mon, 02 Sep 2024 10:47:48 GMT
+|     Content-Type: text/html; charset=utf-8
+|     Allow: OPTIONS, GET, HEAD
+|     Content-Length: 0
+|     Connection: close
+|   RTSPRequest: 
+|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+|     "http://www.w3.org/TR/html4/strict.dtd">
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+|     <title>Error response</title>
+|     </head>
+|     <body>
+|     <h1>Error response</h1>
+|     <p>Error code: 400</p>
+|     <p>Message: Bad request version ('RTSP/1.0').</p>
+|     <p>Error code explanation: HTTPStatus.BAD_REQUEST - Bad request syntax or unsupported method.</p>
+|     </body>
+|_    </html>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8086-TCP:V=7.94SVN%I=7%D=9/2%Time=66D597C3%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,CB0E,"HTTP/1\.1\x20200\x20OK\r\nServer:\x20Werkzeug/2\.1\.2\
+SF:x20Python/3\.8\.13\r\nDate:\x20Mon,\x2002\x20Sep\x202024\x2010:47:47\x2
+SF:0GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:
+SF:\x2051806\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html\x20l
+SF:ang=\"en\">\n\n<head>\n\x20\x20\x20\x20<meta\x20charset=\"utf-8\">\n\x2
+SF:0\x20\x20\x20<title>Inlanefreight\x20Careers</title>\n\x20\x20\x20\x20<
+SF:meta\x20content=\"width=device-width,\x20initial-scale=1\.0\"\x20name=\
+SF:"viewport\">\n\x20\x20\x20\x20<meta\x20content=\"\"\x20name=\"keywords\
+SF:">\n\x20\x20\x20\x20<meta\x20content=\"\"\x20name=\"description\">\n\n\
+SF:x20\x20\x20\x20<!--\x20Favicon\x20-->\n\x20\x20\x20\x20<link\x20href=\"
+SF:static/img/favicon\.ico\"\x20rel=\"icon\">\n\n\x20\x20\x20\x20\x20<!--\
+SF:x20Google\x20Web\x20Fonts\x20\n\x20\x20\x20\x20<link\x20rel=\"preconnec
+SF:t\"\x20href=\"https://fonts\.googleapis\.com\">\n\x20\x20\x20\x20<link\
+SF:x20rel=\"preconnect\"\x20href=\"https://fonts\.gstatic\.com\"\x20crosso
+SF:rigin>\n\x20\x20\x20\x20<link\x20href=\"https://fonts\.googleapis\.com/
+SF:css2\?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=s
+SF:wap\"\x20rel=\"stylesheet\">-->\n\n\x20\x20\x20\x20<!--\x20Icon\x20Font
+SF:\x20Stylesheet\x20-->\n\x20\x20\x20\x20<link\x20href=\"static/css/all\.
+SF:min\.css\"\x20rel=\"")%r(HTTPOptions,C7,"HTTP/1\.1\x20200\x20OK\r\nServ
+SF:er:\x20Werkzeug/2\.1\.2\x20Python/3\.8\.13\r\nDate:\x20Mon,\x2002\x20Se
+SF:p\x202024\x2010:47:48\x20GMT\r\nContent-Type:\x20text/html;\x20charset=
+SF:utf-8\r\nAllow:\x20OPTIONS,\x20GET,\x20HEAD\r\nContent-Length:\x200\r\n
+SF:Connection:\x20close\r\n\r\n")%r(RTSPRequest,1F4,"<!DOCTYPE\x20HTML\x20
+SF:PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\n\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\"http://www\.w3\.org/TR/html4/strict\.dtd\">\n<html>\n\x20\x2
+SF:0\x20\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20http-equiv=\"
+SF:Content-Type\"\x20content=\"text/html;charset=utf-8\">\n\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20<title>Error\x20response</title>\n\x20\x20\x20\x20</he
+SF:ad>\n\x20\x20\x20\x20<body>\n\x20\x20\x20\x20\x20\x20\x20\x20<h1>Error\
+SF:x20response</h1>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Error\x20code:\x20
+SF:400</p>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Message:\x20Bad\x20request\
+SF:x20version\x20\('RTSP/1\.0'\)\.</p>\n\x20\x20\x20\x20\x20\x20\x20\x20<p
+SF:>Error\x20code\x20explanation:\x20HTTPStatus\.BAD_REQUEST\x20-\x20Bad\x
+SF:20request\x20syntax\x20or\x20unsupported\x20method\.</p>\n\x20\x20\x20\
+SF:x20</body>\n</html>\n");
+Device type: general purpose
+Running (JUST GUESSING): IBM OS/2 4.X (85%), IBM z/OS 1.10.X (85%), IBM OS/390 V2 (85%)
+OS CPE: cpe:/o:ibm:os2:4 cpe:/o:ibm:zos:1.10 cpe:/o:ibm:os_390:v2
+Aggressive OS guesses: IBM OS/2 Warp 2.0 (85%), IBM z/OS 1.10 (85%), IBM OS/390 V2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE
+HOP RTT       ADDRESS
+1   107.68 ms 172.18.0.9
+
+Nmap scan report for 172.18.0.4
+Host is up (0.12s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL 5.5.5-10.8.3-MariaDB-1:10.8.3+maria~jammy
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.5-10.8.3-MariaDB-1:10.8.3+maria~jammy
+|   Thread ID: 24
+|   Capabilities flags: 63486
+|   Some Capabilities: Speaks41ProtocolNew, FoundRows, SupportsLoadDataLocal, InteractiveClient, SupportsTransactions, Support41Auth, Speaks41ProtocolOld, IgnoreSigpipes, LongColumnFlag, DontAllowDatabaseTableColumn, ConnectWithDatabase, ODBCClient, IgnoreSpaceBeforeParenthesis, SupportsCompression, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: /){TscyTx~2y0!PQ&eO<
+|_  Auth Plugin Name: mysql_native_password
+Device type: load balancer|general purpose
+Running (JUST GUESSING): Radware APsolute OS 10.X (85%), IBM OS/2 4.X (85%), IBM z/OS 1.10.X (85%), IBM OS/390 V2 (85%)
+OS CPE: cpe:/o:radware:apsolute_os:10 cpe:/o:ibm:os2:4 cpe:/o:ibm:zos:1.10 cpe:/o:ibm:os_390:v2
+Aggressive OS guesses: Radware LinkProof load balancer (85%), IBM OS/2 Warp 2.0 (85%), IBM z/OS 1.10 (85%), IBM OS/390 V2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE
+HOP RTT       ADDRESS
+1   116.69 ms 172.18.0.4
+
+Nmap scan report for 172.18.0.7
+Host is up (0.11s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Device type: load balancer|general purpose
+Running (JUST GUESSING): Radware APsolute OS 10.X (85%), IBM OS/2 4.X (85%), IBM z/OS 1.10.X (85%), IBM OS/390 V2 (85%)
+OS CPE: cpe:/o:radware:apsolute_os:10 cpe:/o:ibm:os2:4 cpe:/o:ibm:zos:1.10 cpe:/o:ibm:os_390:v2
+Aggressive OS guesses: Radware LinkProof load balancer (85%), IBM OS/2 Warp 2.0 (85%), IBM z/OS 1.10 (85%), IBM OS/390 V2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE
+HOP RTT       ADDRESS
+1   111.63 ms 172.18.0.7
+
+Nmap scan report for 172.18.0.8
+Host is up (0.082s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: ILF Shipment Tracking
+Aggressive OS guesses: Scientific Atlanta WebSTAR EPC2203 cable modem (86%), Dell PowerConnect 3348 switch (85%), Sony Ericsson Hazel (J10, J20) or Elm mobile phone (85%), Sony Ericsson W705 or W995 Walkman mobile phone (85%), IBM z/OS 1.12 (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.3 - 8.3 (85%), Siemens C2-010-I ADSL modem (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   82.03 ms 172.18.0.8
+
+Nmap scan report for 172.18.0.6
+Host is up (0.091s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL 5.5.5-10.8.3-MariaDB-1:10.8.3+maria~jammy
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.5-10.8.3-MariaDB-1:10.8.3+maria~jammy
+|   Thread ID: 48
+|   Capabilities flags: 63486
+|   Some Capabilities: Speaks41ProtocolNew, FoundRows, SupportsLoadDataLocal, InteractiveClient, SupportsTransactions, Support41Auth, Speaks41ProtocolOld, IgnoreSigpipes, LongColumnFlag, DontAllowDatabaseTableColumn, ConnectWithDatabase, ODBCClient, IgnoreSpaceBeforeParenthesis, SupportsCompression, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: TrcxSutg&(2d$$&0`r=u
+|_  Auth Plugin Name: mysql_native_password
+Device type: broadband router|switch|phone|general purpose
+Running (JUST GUESSING): Scientific Atlanta embedded (86%), Dell embedded (85%), Sony Ericsson embedded (85%), IBM z/OS 1.12.X (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.X|8.X (85%), Siemens embedded (85%)
+OS CPE: cpe:/h:scientificatlanta:webstar_epc2203 cpe:/h:dell:powerconnect_3348 cpe:/h:sonyericsson:w705 cpe:/o:ibm:zos:1.12 cpe:/o:ibm:os_390:v2 cpe:/o:hp:openvms:7 cpe:/o:hp:openvms:8 cpe:/h:siemens:c2-010-i
+Aggressive OS guesses: Scientific Atlanta WebSTAR EPC2203 cable modem (86%), Dell PowerConnect 3348 switch (85%), Sony Ericsson W705 or W995 Walkman mobile phone (85%), IBM z/OS 1.12 (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.3 - 8.3 (85%), Siemens C2-010-I ADSL modem (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   91.03 ms 172.18.0.6
+
+Nmap scan report for 172.18.0.10
+Host is up (0.080s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-favicon: Fortinet
+|_http-title: Please Login
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Aggressive OS guesses: Scientific Atlanta WebSTAR EPC2203 cable modem (86%), Dell PowerConnect 3348 switch (85%), Sony Ericsson Hazel (J10, J20) or Elm mobile phone (85%), Sony Ericsson W705 or W995 Walkman mobile phone (85%), IBM z/OS 1.12 (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.3 - 8.3 (85%), Siemens C2-010-I ADSL modem (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   80.19 ms 172.18.0.10
+
+Nmap scan report for 172.18.0.11
+Host is up (0.088s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.53 ((Debian))
+| http-robots.txt: 1 disallowed entry 
+|_/wp-admin/
+|_http-generator: WordPress 6.0
+|_http-title: Inlanefreight IR &#8211; Inlanefreight Investor Relations
+|_http-server-header: Apache/2.4.53 (Debian)
+Device type: load balancer|general purpose
+Running (JUST GUESSING): Radware APsolute OS 10.X (85%), IBM OS/2 4.X (85%), IBM z/OS 1.10.X (85%), IBM OS/390 V2 (85%)
+OS CPE: cpe:/o:radware:apsolute_os:10 cpe:/o:ibm:os2:4 cpe:/o:ibm:zos:1.10 cpe:/o:ibm:os_390:v2
+Aggressive OS guesses: Radware LinkProof load balancer (85%), IBM OS/2 Warp 2.0 (85%), IBM z/OS 1.10 (85%), IBM OS/390 V2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   87.96 ms 172.18.0.11
+
+Nmap scan report for 172.18.0.12
+Host is up (0.14s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.53 ((Debian))
+|_http-generator: Drupal 9 (https://www.drupal.org)
+| http-robots.txt: 22 disallowed entries (15 shown)
+| /core/ /profiles/ /README.txt /web.config /admin/ 
+| /comment/reply/ /filter/tips /node/add/ /search/ /user/register 
+| /user/password /user/login /user/logout /index.php/admin/ 
+|_/index.php/comment/reply/
+|_http-title: Welcome to Test | Test
+|_http-server-header: Apache/2.4.53 (Debian)
+Device type: switch|general purpose|broadband router
+Running (JUST GUESSING): Dell embedded (85%), IBM z/OS 1.12.X (85%), Scientific Atlanta embedded (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.X|8.X (85%), Siemens embedded (85%)
+OS CPE: cpe:/h:dell:powerconnect_3348 cpe:/o:ibm:zos:1.12 cpe:/h:scientificatlanta:webstar_epc2203 cpe:/o:ibm:os_390:v2 cpe:/o:hp:openvms:7 cpe:/o:hp:openvms:8 cpe:/h:siemens:c2-010-i
+Aggressive OS guesses: Dell PowerConnect 3348 switch (85%), IBM z/OS 1.12 (85%), Scientific Atlanta WebSTAR EPC2203 cable modem (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.3 - 8.3 (85%), Siemens C2-010-I ADSL modem (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE
+HOP RTT       ADDRESS
+1   138.32 ms 172.18.0.12
+
+Nmap scan report for 172.17.0.2
+Host is up (0.094s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Support Center
+Device type: switch|phone|general purpose|broadband router
+Running (JUST GUESSING): Dell embedded (85%), Sony Ericsson embedded (85%), IBM z/OS 1.12.X (85%), Scientific Atlanta embedded (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.X|8.X (85%), Siemens embedded (85%)
+OS CPE: cpe:/h:dell:powerconnect_3348 cpe:/h:sonyericsson:w705 cpe:/o:ibm:zos:1.12 cpe:/h:scientificatlanta:webstar_epc2203 cpe:/o:ibm:os_390:v2 cpe:/o:hp:openvms:7 cpe:/o:hp:openvms:8 cpe:/h:siemens:c2-010-i
+Aggressive OS guesses: Dell PowerConnect 3348 switch (85%), Sony Ericsson W705 or W995 Walkman mobile phone (85%), IBM z/OS 1.12 (85%), Scientific Atlanta WebSTAR EPC2203 cable modem (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.3 - 8.3 (85%), Siemens C2-010-I ADSL modem (85%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   94.15 ms 172.17.0.2
+
+Nmap scan report for 172.16.8.3
+Host is up (0.078s latency).
+Not shown: 989 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2024-09-02 10:47:31Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: INLANEFREIGHT.LOCAL0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: INLANEFREIGHT.LOCAL0., Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+Device type: switch|broadband router|general purpose
+Running (JUST GUESSING): Dell embedded (85%), Scientific Atlanta embedded (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.X|8.X (85%), Siemens embedded (85%)
+OS CPE: cpe:/h:dell:powerconnect_3348 cpe:/h:scientificatlanta:webstar_epc2203 cpe:/o:ibm:os_390:v2 cpe:/o:hp:openvms:7 cpe:/o:hp:openvms:8 cpe:/h:siemens:c2-010-i
+Aggressive OS guesses: Dell PowerConnect 3348 switch (85%), Scientific Atlanta WebSTAR EPC2203 cable modem (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.3 - 8.3 (85%), Siemens C2-010-I ADSL modem (85%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2024-09-02T10:49:36
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+|_nbstat: NetBIOS name: DC01, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b0:9e:2a (VMware)
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   78.41 ms 172.16.8.3
+
+Nmap scan report for 172.16.8.20
+Host is up (0.078s latency).
+Not shown: 993 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-title: Home
+| http-methods: 
+|_  Potentially risky methods: TRACE
+111/tcp  open  rpcbind       2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/tcp6  rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  2,3,4        111/udp6  rpcbind
+|   100003  2,3         2049/udp   nfs
+|   100003  2,3         2049/udp6  nfs
+|   100003  2,3,4       2049/tcp   nfs
+|   100003  2,3,4       2049/tcp6  nfs
+|   100005  1,2,3       2049/tcp   mountd
+|   100005  1,2,3       2049/tcp6  mountd
+|   100005  1,2,3       2049/udp   mountd
+|   100005  1,2,3       2049/udp6  mountd
+|   100021  1,2,3,4     2049/tcp   nlockmgr
+|   100021  1,2,3,4     2049/tcp6  nlockmgr
+|   100021  1,2,3,4     2049/udp   nlockmgr
+|   100021  1,2,3,4     2049/udp6  nlockmgr
+|   100024  1           2049/tcp   status
+|   100024  1           2049/tcp6  status
+|   100024  1           2049/udp   status
+|_  100024  1           2049/udp6  status
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+2049/tcp open  nlockmgr      1-4 (RPC #100021)
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2024-09-02T10:49:57+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=ACADEMY-AEN-DEV01.INLANEFREIGHT.LOCAL
+| Not valid before: 2024-09-01T10:07:52
+|_Not valid after:  2025-03-03T10:07:52
+| rdp-ntlm-info: 
+|   Target_Name: INLANEFREIGHT
+|   NetBIOS_Domain_Name: INLANEFREIGHT
+|   NetBIOS_Computer_Name: ACADEMY-AEN-DEV
+|   DNS_Domain_Name: INLANEFREIGHT.LOCAL
+|   DNS_Computer_Name: ACADEMY-AEN-DEV01.INLANEFREIGHT.LOCAL
+|   DNS_Tree_Name: INLANEFREIGHT.LOCAL
+|   Product_Version: 10.0.17763
+|_  System_Time: 2024-09-02T10:49:41+00:00
+Aggressive OS guesses: Scientific Atlanta WebSTAR EPC2203 cable modem (86%), Dell PowerConnect 3348 switch (85%), Sony Ericsson Hazel (J10, J20) or Elm mobile phone (85%), IBM z/OS 1.12 (85%), IBM OS/390 V2 (85%), HP OpenVMS 7.3 - 8.3 (85%), Siemens C2-010-I ADSL modem (85%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_nbstat: NetBIOS name: ACADEMY-AEN-DEV, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b0:09:72 (VMware)
+| smb2-time: 
+|   date: 2024-09-02T10:49:39
+|_  start_date: N/A
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   77.97 ms 172.16.8.20
+
+Nmap scan report for 172.16.8.50
+Host is up (0.083s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: INLANEFREIGHT
+|   NetBIOS_Domain_Name: INLANEFREIGHT
+|   NetBIOS_Computer_Name: ACADEMY-AEN-MS0
+|   DNS_Domain_Name: INLANEFREIGHT.LOCAL
+|   DNS_Computer_Name: ACADEMY-AEN-MS01.INLANEFREIGHT.LOCAL
+|   DNS_Tree_Name: INLANEFREIGHT.LOCAL
+|   Product_Version: 10.0.17763
+|_  System_Time: 2024-09-02T10:49:42+00:00
+|_ssl-date: 2024-09-02T10:49:57+00:00; -1s from scanner time.
+| ssl-cert: Subject: commonName=ACADEMY-AEN-MS01.INLANEFREIGHT.LOCAL
+| Not valid before: 2024-09-01T10:08:09
+|_Not valid after:  2025-03-03T10:08:09
+8080/tcp open  http          Apache Tomcat 10.0.21
+|_http-favicon: Apache Tomcat
+|_http-title: Apache Tomcat/10.0.21
+Aggressive OS guesses: IBM z/OS 2.1 (86%), Dell PowerConnect 3324 switch (85%), Radware LinkProof load balancer (85%), IBM OS/2 Warp 2.0 (85%), IBM z/OS 1.11 (85%), Dell PowerConnect 3348 switch (85%), IBM z/OS 1.10 (85%), IBM z/OS 1.12 (85%), Scientific Atlanta WebSTAR EPC2203 cable modem (85%), IBM OS/390 V2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2024-09-02T10:49:44
+|_  start_date: N/A
+|_nbstat: NetBIOS name: ACADEMY-AEN-MS0, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:b0:83:22 (VMware)
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   82.54 ms 172.16.8.50
+
+Post-scan script results:
+| clock-skew: 
+|   0s: 
+|     172.16.8.3
+|_    172.16.8.20
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep  2 06:50:05 2024 -- 15 IP addresses (15 hosts up) scanned in 228.77 seconds

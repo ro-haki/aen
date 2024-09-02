@@ -11,4 +11,4 @@ Blind XSS support from ticket form              HTB{1nS3cuR3_c00k135}
 flag.txt in /home/srvadm on dmz01               b447c27a00e3a348881b0030177000cd
 flag.txt on dmz01 in /srv/ftp                   HTB{0eb0ab788df18c3115ac43b1c06ae6c4}
 container wordpress /var/www/html/flag.txt      HTB{e7134abea7438e937b87608eab0d979c}
-  
+root flag from some file opened by grep         a34985b5976072c3c148abc751671302

