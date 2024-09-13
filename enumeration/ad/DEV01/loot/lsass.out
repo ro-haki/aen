@@ -1,0 +1,335 @@
+FILE: ======== lsass.dmp =======
+
+== LogonSession ==
+authentication_id 92989 (16b3d)
+session_id 0
+username MSSQL$SQLEXPRESS
+domainname NT Service
+logon_server 
+logon_time 2024-09-11T21:05:04.267819+00:00
+sid S-1-5-80-3880006512-4290199581-1648723128-3569869737-3631323133
+luid 92989
+	== MSV ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT
+		LM: NA
+		NT: 8c7fecce6aa5923d21140ddada60d812
+		SHA1: 54327c6dfe40bf10528284600da2c8b17a8e1f50
+		DPAPI: NA
+	== WDIGEST [16b3d]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT.LOCAL
+		Password: b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+		password (hex)b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+	== WDIGEST [16b3d]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+	== DPAPI [16b3d]==
+		luid 92989
+		key_guid 26862b2d-6bee-4891-bf50-7c3e6ae3b717
+		masterkey 98b9413b8180a9874340201bedce155cefeb9aad452f277c2c429fc658ad786365285a3e5be5dcbf643216c915df7a34832a548001fefffb1e64dc99964dd7b2
+		sha1_masterkey de69640845d8a2827760109dd9bc50a37b8e6d47
+	== DPAPI [16b3d]==
+		luid 92989
+		key_guid 1890c99f-203b-46ad-ad0a-1f8a65e8e1a4
+		masterkey a3b68723c8aee7ba221fcb58c1257b03aaa8f4c08373945e191154a71ea055c27ad4bd3795971f201c3510c9fd5840692a77ead426d9e391daff75afcefc6ca2
+		sha1_masterkey 16d5ec51941b89e1cc72defabbd7a20a014dbd74
+
+== LogonSession ==
+authentication_id 187512 (2dc78)
+session_id 1
+username hporter
+domainname INLANEFREIGHT
+logon_server DC01
+logon_time 2024-09-11T21:05:20.049077+00:00
+sid S-1-5-21-2814148634-3729814499-1637837074-4609
+luid 187512
+	== MSV ==
+		Username: hporter
+		Domain: INLANEFREIGHT
+		LM: NA
+		NT: d17ebeb6a724a3767774a21388c7ea59
+		SHA1: a6aa885bdb703bca17303c06c4f1b9c948581272
+		DPAPI: a9cfbacea5c7230d050352d97fdaecc7
+	== WDIGEST [2dc78]==
+		username hporter
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: hporter
+		Domain: INLANEFREIGHT.LOCAL
+		Password: Gr8hambino!
+		password (hex)470072003800680061006d00620069006e006f0021000000
+	== WDIGEST [2dc78]==
+		username hporter
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 126396 (1edbc)
+session_id 0
+username ANONYMOUS LOGON
+domainname NT AUTHORITY
+logon_server 
+logon_time 2024-09-11T21:05:05.267827+00:00
+sid S-1-5-7
+luid 126396
+
+== LogonSession ==
+authentication_id 995 (3e3)
+session_id 0
+username IUSR
+domainname NT AUTHORITY
+logon_server 
+logon_time 2024-09-11T21:05:04.345948+00:00
+sid S-1-5-17
+luid 995
+
+== LogonSession ==
+authentication_id 39209 (9929)
+session_id 0
+username 
+domainname 
+logon_server 
+logon_time 2024-09-11T21:05:03.174085+00:00
+sid None
+luid 39209
+	== MSV ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT
+		LM: NA
+		NT: 8c7fecce6aa5923d21140ddada60d812
+		SHA1: 54327c6dfe40bf10528284600da2c8b17a8e1f50
+		DPAPI: NA
+
+== LogonSession ==
+authentication_id 999 (3e7)
+session_id 0
+username ACADEMY-AEN-DEV$
+domainname INLANEFREIGHT
+logon_server 
+logon_time 2024-09-11T21:05:03.064804+00:00
+sid S-1-5-18
+luid 999
+	== WDIGEST [3e7]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: academy-aen-dev$
+		Domain: INLANEFREIGHT.LOCAL
+		Password: b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+		password (hex)b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+	== WDIGEST [3e7]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+	== DPAPI [3e7]==
+		luid 999
+		key_guid 65c1d2db-ae52-4ba0-af0d-e2d0b583fcf3
+		masterkey 88ba0a4b50f510d957ec60b6ac5919eec93d2a17f7738afe4dbfe7989b87ee64dc47310ce264dfd8cf7e4cb041b2301781ba981cde1ace634eb3440213ea0919
+		sha1_masterkey 24772723d9f13c777767310a9a4d317a02d9e2ca
+	== DPAPI [3e7]==
+		luid 999
+		key_guid eaaa3e39-4408-4f81-931d-d655673a5328
+		masterkey fa5889e5d4f49f240a1023a0b564aa4d220eb6d43075c41f34602b0d6fb017bfe35c8ea64373ec4ee8b6fb950a9404a90dbc243a14102820ed68d2f5030031e6
+		sha1_masterkey 1fd0807fc5d41a925a8dc71c6ec8f7db6f6f3f33
+	== DPAPI [3e7]==
+		luid 999
+		key_guid c84d88a5-65b1-420a-8219-cc9a8d303662
+		masterkey 614c4bb78cab19c6a9545b5469663776668591c8b58e14cd097b27591c7e151ed103cd15c0e1df9918e86ed11ffe75f969d584becd75d42aaff66ef4908590b8
+		sha1_masterkey 7b34ba92c12a12b7d1fbea56d38f25cd320403fa
+	== DPAPI [3e7]==
+		luid 999
+		key_guid 5781f9ef-e765-4f2f-ba3c-1ce15a106074
+		masterkey a9a030d92c3bfc57a077a4aca3dec0e07ef07b0360e8397f00afd741d346526620380b0a54b1b1abfcda6d888b319e1493f9a63783aee9a1688d3b4b075f7843
+		sha1_masterkey 792fddbc95b5c5d579e8add8b811abc549c70ded
+	== DPAPI [3e7]==
+		luid 999
+		key_guid 61e5b3e0-f9e8-4000-b1cb-b63cbebca443
+		masterkey bdd8897a9576ba5284fe5a81af2090a107197cf00dd36af201aba30a9cec10138b8dff0ce1d8f93dbb993d971f85a4ad8844a4409981bcf2460c87446402508c
+		sha1_masterkey 66f2c7c0240b716a948f9c346c6dc5e0569937c5
+
+== LogonSession ==
+authentication_id 996 (3e4)
+session_id 0
+username ACADEMY-AEN-DEV$
+domainname INLANEFREIGHT
+logon_server 
+logon_time 2024-09-11T21:05:03.736601+00:00
+sid S-1-5-20
+luid 996
+	== MSV ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT
+		LM: NA
+		NT: 8c7fecce6aa5923d21140ddada60d812
+		SHA1: 54327c6dfe40bf10528284600da2c8b17a8e1f50
+		DPAPI: NA
+	== WDIGEST [3e4]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: academy-aen-dev$
+		Domain: INLANEFREIGHT.LOCAL
+		Password: b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+		password (hex)b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+	== WDIGEST [3e4]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 40210 (9d12)
+session_id 1
+username UMFD-1
+domainname Font Driver Host
+logon_server 
+logon_time 2024-09-11T21:05:03.564831+00:00
+sid S-1-5-96-0-1
+luid 40210
+	== MSV ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT
+		LM: NA
+		NT: 8c7fecce6aa5923d21140ddada60d812
+		SHA1: 54327c6dfe40bf10528284600da2c8b17a8e1f50
+		DPAPI: NA
+	== WDIGEST [9d12]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT.LOCAL
+		Password: b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+		password (hex)b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+	== WDIGEST [9d12]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 535282 (82af2)
+session_id 0
+username DotNetNukeAppPool
+domainname IIS APPPOOL
+logon_server 
+logon_time 2024-09-11T21:18:02.705353+00:00
+sid S-1-5-82-2509074736-2823226210-3382280688-2640573866-389213758
+luid 535282
+	== MSV ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT
+		LM: NA
+		NT: 8c7fecce6aa5923d21140ddada60d812
+		SHA1: 54327c6dfe40bf10528284600da2c8b17a8e1f50
+		DPAPI: NA
+	== WDIGEST [82af2]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT.LOCAL
+		Password: b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+		password (hex)b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+	== WDIGEST [82af2]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 89307 (15cdb)
+session_id 0
+username SQLTELEMETRY$SQLEXPRESS
+domainname NT Service
+logon_server 
+logon_time 2024-09-11T21:05:04.220942+00:00
+sid S-1-5-80-1985561900-798682989-2213159822-1904180398-3434236965
+luid 89307
+	== MSV ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT
+		LM: NA
+		NT: 8c7fecce6aa5923d21140ddada60d812
+		SHA1: 54327c6dfe40bf10528284600da2c8b17a8e1f50
+		DPAPI: NA
+	== WDIGEST [15cdb]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT.LOCAL
+		Password: b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+		password (hex)b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+	== WDIGEST [15cdb]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+
+== LogonSession ==
+authentication_id 997 (3e5)
+session_id 0
+username LOCAL SERVICE
+domainname NT AUTHORITY
+logon_server 
+logon_time 2024-09-11T21:05:03.908446+00:00
+sid S-1-5-19
+luid 997
+	== Kerberos ==
+		Username: 
+		Domain: 
+
+== LogonSession ==
+authentication_id 40188 (9cfc)
+session_id 0
+username UMFD-0
+domainname Font Driver Host
+logon_server 
+logon_time 2024-09-11T21:05:03.564831+00:00
+sid S-1-5-96-0-0
+luid 40188
+	== MSV ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT
+		LM: NA
+		NT: 8c7fecce6aa5923d21140ddada60d812
+		SHA1: 54327c6dfe40bf10528284600da2c8b17a8e1f50
+		DPAPI: NA
+	== WDIGEST [9cfc]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)
+	== Kerberos ==
+		Username: ACADEMY-AEN-DEV$
+		Domain: INLANEFREIGHT.LOCAL
+		Password: b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+		password (hex)b8bfcc8a7be84c3be0c5e6b0504dfd542ce5d913205be933a3157488bfe39f88ae00aebfa5fe937a981d793980761c3cfe2afe6078b67b2920584b2b2b1d4feb21af33afa92ad0d9715c53c707b0c3f4988c6509914da2592752d8755e3f2833bd924e1dfd70f960af6664480c54d1e22cfd83a3b48a5fb43eed2415bd0fb9e7dbb2b0fab141612ce668397d9ad6523c0f540b88f8b5d8f4dd360063c52f0aa5c1612cf05ba01947d3898e1022b82ef8bc54e3b9639092775a38ca7bbc044bc2c1a2d5d1cc5683d81eef6e3da2b0db690d455a3a86cf11b651e94cdf3944c8f1d80e00bcac3e6b3d76289a079268f078
+	== WDIGEST [9cfc]==
+		username ACADEMY-AEN-DEV$
+		domainname INLANEFREIGHT
+		password None
+		password (hex)

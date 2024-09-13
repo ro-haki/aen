@@ -7,8 +7,14 @@ dump flag user status.inlanefreight.local       1fbea4df249ac4f4881a5da387eb297c
 IDOR in careers /profile?id=4                   HTB{8f40ecf17f681612246fa5728c159e46}
 Blind XSS support from ticket form              HTB{1nS3cuR3_c00k135}
 /flag.txt vis PDF XSS                           HTB{49f0bad299687c62334182178bfd75d8}
-00112233_flag.txt via rev_shell for monitoring  HTB{bdd8a93aff53fd63a0a14de4eba4cbc1}
+00112233_flag.txt webdev monitoring             HTB{bdd8a93aff53fd63a0a14de4eba4cbc1}
 flag.txt in /home/srvadm on dmz01               b447c27a00e3a348881b0030177000cd
 flag.txt on dmz01 in /srv/ftp                   HTB{0eb0ab788df18c3115ac43b1c06ae6c4}
 container wordpress /var/www/html/flag.txt      HTB{e7134abea7438e937b87608eab0d979c}
-root flag from some file opened by grep         a34985b5976072c3c148abc751671302
+root.txt                                        a34985b5976072c3c148abc751671302
+NSF flag.txt                                    bf22a1d0acfca4af517e1417a80e92d1
+Administrator desktop on DEV01                  K33p_0n_sp00fing!
+Administrator desktop on MS01                   33a9d46de4015e7b3b0ad592a9394720
+Administrator desktop on DC01                   7c09eb1fff981654a3bb3b4a4e0d176a
+MGMT01 ssmallsadm                               3c4996521690cc76446894da2bf7dd8f
+MGMT01 administrator                            206c03861986c0e264438cb6e8e90a19

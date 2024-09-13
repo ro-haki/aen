@@ -1,4 +1,4 @@
-passwods:
+dmz01:
 admin:admin                                 -> shopdev2
 Admin:4528342e54d6f8f8cf15bf6e3c31bf1f6     -> status (sql injection dump)
 admin:12qwaszx                              -> monitoring.inlanefreight.local
@@ -9,14 +9,42 @@ tom:Sup3RS3cuR3P@sSW0rD                     -> from wordress-config.sh which is 
 james:Sup3RS3cuR3P@sSW0rD                   -> from wordress-config.sh which is on container works only for wordpress
 john:Sup3RS3cuR3P@sSW0rD                    -> from wordress-config.sh which is on container works only for wordpress
 WORDPRESS_DB_PASSWORD:Sup3RS3cuR3@123       -> from wordpress container in env
-drupal site-pass:temp@T3st1ng               -> from file that I can open with grep
+site-pass:temp@T3st1ng                      -> drupal site-pass
+tom:Welcome1                                -> cracked from shadow file
 
+
+AD
+Administrator:D0tn31Nuk3R0ck$$@123                              -> DEV01 creds for DNN CMS
+Administrator:0e20798f695ab0d04bc138b22344cea8                  -> DEV01 NTLM hash of Administrator
+mpalledorous:3bb874a52ce7b0d64ee2a82bbf3fe1cc:1squints2         -> DEV01 NTLM hash of mpalledorous
+backupjob:lucky7                                                -> cracked TGS for INLANEFREIGHT.LOCAL$backupjob/veam001.inlanefreight.local@INLANEFREIGHT.LOCAL
+frontdesk:ILFreightLobby!                                       -> found by enumeration of users via crackmapexec
+DefaultPassword:Gr8hambino!                                     -> lsadump::secrets
+hporter:Gr8hambino!                                             -> from pypykatz via LSASS dumping
+backupadm:!qazXSW@                                              -> from DC01 smb Department Shares - IT - Private - SQL Express Backup.ps1 
+
+ilfserveradm:Sys26Admin                                         -> unattended.xml on MS01
+mssqladm:DBAilfreight1!                                         -> from sekurelsa::logonpasswords under Administrator
+ttimmons:Repeat09                                               -> crack SPN krb5 because of mssqladm GenericWrite on ttimmons
+
+
+kdbx:
+mssql:Super@123
+michael321:12345
+Administrator:Password_123
+
+snaffler:
+MyDNNUser:MyDNNS3cureP@$$w0rD
+account@inlanefreight.local:L337^p@$$w0rD                    -> DC01.INLANEFREIGHT.LOCAL\NETLOGON\adum.vbs
+
+DC_SYNC:
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:fd1f7e5564060258ea787ddbb6e6afa2:::                                                                 
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::                                                                         
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:b9362dfa5abf924b0d172b8c49ab58ac:::
 
 hashes:
-drupal - admin:$S$EC2Uz..YfIRasblAPLUodfqopenW1mJfjCssyG0shSqfkC/gwq1F 
-wordpress - inlfreightwp:$P$BeLtPM0USCOXM/ciD.m75XXE3cYBl90
-wordpress - james:$P$B0zWrKLYFVYTef4oBUPdXOINqvio8/0
+budget_data.xlsx -> lucky7
+Inlanefreight.kdbx -> Welcome1
 
-db salts:
-drupal: /){TscyTx~2y0!PQ&eO<
-wordpress: TrcxSutg&(2d$$&0`r=u
+
+Invoke-Command -Session $session -ScriptBlock {  Import-Module "C:\users\backupadm\SharpHound.ps1"; Invoke-BloodHound -CollectionMethods all }

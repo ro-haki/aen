@@ -23,8 +23,23 @@ crackmapexec smb IPs -u 'guest' -p '' --users
 kerbrute userenum -d inlanefreight.local --dc 172.16.8.3  /usr/share/wordlists/statistically-likely-usernames/john.txt
 ```
 ## `jsmith.txt`
-- WE HAVE SOMETHING
-- 
+- WE HAVE SOMETHING 
 ```
 kerbrute userenum -d inlanefreight.local --dc 172.16.8.3  /opt/wordlist/statistically-likely-usernames/jsmith.txt
 ```
+# NFS
+- `showmount -e 172.16.8.20`
+```
+/DEV01 (everyone)
+```
+- mount NFS
+```
+mount nfs 172.16.8.20/DEV01 /mnt -o nolock
+```
+# DNN CMS on 172.16.8.20
+- creds: `Administrator:D0tn31Nuk3R0ck$$@123` (from NFS)
+- version: `09.10.02 (0)` net framework 4.2
+- How to get [RCE on DNN](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/dotnetnuke-dnn)
+# User enumeration  from  `crackmapexec`
+- `crackmapexec smb 172.16.8.3 -u backupjob  -p lucky7 --users`
+	- found `frontdesk:ILFreightLobby!`
